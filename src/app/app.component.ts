@@ -10,10 +10,9 @@ export class AppComponent {
   isAuth = false;
 
   constructor() {
-    setTimeout(
-      () => {
+     setTimeout( () => {
         this.isAuth = true;
-      }, 4000
-    );
+      }, 4000    );
+    
   }
 }
