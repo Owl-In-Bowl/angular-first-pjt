@@ -6,8 +6,29 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'first project';
+  title="mon App"
   isAuth = false;
+
+lastUpdate = new Date();
+
+  appareilOne = 'Machine à laver';
+  appareilTwo = 'Frigo';
+  appareilThree = 'ordinateur';
+
+  appareils = [
+  {
+    name: 'Machine à laver',
+    status: 'éteint'
+  },
+  {
+    name : 'Frigo',
+    status: 'éteint'
+  },
+  {
+    name: 'Ordinateur',
+    status: 'allumé'
+  }
+  ];
 
   constructor() {
      setTimeout( () => {
@@ -15,4 +36,10 @@ export class AppComponent {
       }, 4000    );
     
   }
+
+  onAllumer(){
+    console.log('On allume tout !');
+  }
+
 }
+
